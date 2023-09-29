@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html style="--font: &quot;Roboto Mono&quot;, &quot;Roboto Mono&quot;, &quot;Vazirmatn&quot;, monospace; ; ">
+  <head>
+    <title>OwlTube Settings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    <style type="text/css" media="screen">
+      body {
+        color: gray;
+        background-color: #26262a;
+        margin: 0px
+      }
+
+      .background {
+        background-color: #26262a;
+      }
+
+      .header {
+        color: rgb(190, 190, 190);
+        font-family: var(--font);
+        margin: 20px;
+        position: fixed;
+        z-index: 2;
+        cursor: default;
+        user-select: none;
+      }
+
+      .container {
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      }
+
+      .container::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+      }
+
+      .custom-select {
+        position: relative;
+        font-family: var(--font);
+        font-size: x-large;
+        text-align: center;
+        appearance: initial;
+        background: none;
+        border: none;
+        outline: none;
+        color: gray;
+        width: 100%;
+        height: 100vh;
+        cursor: default;
+      }
+
+      .custom-select select {
+        display: none;
+      }
+
+      .select-selected {
+        background: none;
+        color: gray;
+        border: none;
+        outline: none;
+        position: relative;
+        top: 50%;
+        width: 100%;
+        user-select: none;
+      }
+
+      .select-items {
+        position: relative;
+        background: none;
+        border: none;
+        outline: none;
+        overflow: hidden;
+        width: 100%;
+        transform: translateY(50vh);
+      }
+
+      .select-hide {
+        display: none;
+      }
+
+      .select-items div:hover, .same-as-selected {
+        /*background-color: darkgray;*/
+      }
+
+      .select-padding {
+        height: 50vh;
+        transform: translateY(50vh);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="header">
+      OwlTube Settings
+    </h1>
+    <div id="custom-select" class="custom-select container"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
